@@ -4,7 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Global Mosaic</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4e1ff; /* Light purple background */
+            text-align: center;
+        }
+
+        header {
+            background-color: #6a0dad; /* Dark purple */
+            color: gold;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header p {
+            margin: 5px 0;
+            font-size: 1.2em;
+        }
+
+        .intro, .case-study, .blog-post {
+            padding: 20px;
+        }
+
+        .intro img, .case-study img, .blog-post img {
+            width: 80%;
+            max-width: 800px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .case-studies, .blog-posts {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .case-study, .blog-post {
+            width: 300px;
+            background-color: #fff;
+            border: 2px solid #6a0dad;
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: left;
+        }
+
+        .case-study img, .blog-post img {
+            width: 100%;
+            height: auto;
+        }
+
+        .case-study h3, .blog-post h3 {
+            color: #6a0dad;
+            padding: 10px;
+        }
+
+        footer {
+            background-color: #6a0dad;
+            color: gold;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -14,16 +82,27 @@
 
     <section class="intro">
         <img src="https://source.unsplash.com/800x400/?world,globe" alt="Global Image">
-        <p>Globalization is not a singular force but a mosaic of cultural, economic, and social interactions. Explore how different communities contribute to this evolving landscape.</p>
+        <p>Globalization challenges traditions, disrupts communities, and inspires creative resistance. This space explores how young people—through art, activism, and digital tools—are shaping a new future. Dive into stories of resilience, discover movements, and take action.</p>
     </section>
 
-    <section class="gallery">
-        <h2>Cultural Snapshots</h2>
-        <div class="image-grid">
-            <img src="https://source.unsplash.com/300x200/?culture,people" alt="Culture">
-            <img src="https://source.unsplash.com/300x200/?city,global" alt="City">
-            <img src="https://source.unsplash.com/300x200/?market,local" alt="Market">
+    <section class="case-studies">
+        <h2>Case Studies</h2>
+        <div class="case-study">
+            <img src="https://source.unsplash.com/300x200/?Oaxaca,Mexico" alt="Oaxaca, Mexico">
+            <h3>Oaxaca, Mexico</h3>
+            <p>Oaxaca’s youth collectives, spurred by the violent repression of 2006, utilized art and music to reclaim public spaces. Groups like Arte Jaguar and the anarcho-punk scene crafted “rebel aesthetics,” transforming mundane walls into vibrant terrains of resistance. This creative defiance challenges both local oppression and global capitalist influences.</p>
         </div>
+        <!-- Add more case studies as needed -->
+    </section>
+
+    <section class="blog-posts">
+        <h2>Latest Articles</h2>
+        <div class="blog-post">
+            <img src="https://source.unsplash.com/300x200/?globalization,culture" alt="Navigating Globalization">
+            <h3>Navigating Globalization: Celebrating Diverse Communities and Creativity</h3>
+            <p>In a world that is constantly changing and evolving, it is more important than ever to celebrate the diverse communities that make up our...</p>
+        </div>
+        <!-- Add more blog posts as needed -->
     </section>
 
     <footer>
@@ -31,3 +110,4 @@
     </footer>
 </body>
 </html>
+
